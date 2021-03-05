@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+body{
+    background-color:  hsl(218, 28%, 13%);
+    font-family: 'Raleway', sans-serif;
+
+}
+
+header{
+    
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding-left: 5em;
+    padding-right: 8em;
+    padding-top: 5em;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5em;
+    width: 100%;
+    
+}
+.nav__link{
+    font-size: 14px;
+    font-weight: 400;
+    color:  hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.nav__link:hover{
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+}
+.intro__main{
+    width: 35%;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.Fylo{
+    float: left;
+}
+
+.landing__intro{
+   
+    
+}
+.intro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    gap: 1em;
+
+}
+
+.intro__main{
+    text-align: center;
+}
+
+.intro__txt{
+    text-align: center;
+    width: 33%;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    
+}
+
+.intro__button{
+    background-color:   hsl(198, 60%, 50%);;
+    
+    border-radius: 80em;
+    border: 1px solid hsl(198, 60%, 50%);
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;   
+    font-weight: 400;
+}
+
+.intro__button:hover{
+    background-color: hsl(176, 68%, 64%);
+}
