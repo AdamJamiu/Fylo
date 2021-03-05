@@ -108,18 +108,22 @@ ul{
 .details-container{
     
     background-color: yellow;
-    padding-left: 15em;
-    padding-right: 15em;
+    padding-left: 20em;
+    padding-right: 20em;
     
 }
 
 .row{
     display: flex;
     flex-direction: row;
-    gap: 4em;
+    column-gap: 3em;
+    row-gap: 5em;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 4em;
+    background-color: green;
+    
 }
 
 .col{
