@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
-
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
    
     font-family: 'Raleway', sans-serif;
-
+    margin: 0;
 }
 
 .header{
@@ -196,19 +199,20 @@ ul{
 }
 
 .testimonial{
-    background-color: hsl(218, 28%, 13%);
+    background-color: hsl(219, 30%, 18%);
 }
 
 .testimonial-container{
     padding-left: 10em;
     padding-right: 10em;
-    background-color: yellow;
+    background-color: hsl(218, 28%, 13%);
+    padding-top: 10em;
 }
 
 .testimonial__row{
     display: flex;
     flex-direction: ;
-    gap: 5em;
+    gap: 4em;
     
 }
 
@@ -241,4 +245,65 @@ ul{
     line-height: 1.6;
     letter-spacing: 1px;
     word-spacing: 1px;
+}
+
+.sign-up__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10em;
+    flex-wrap: wrap;
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.sign-up-content{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    column-gap: 5em;
+    justify-content: center;
+    width: 70%;
+    background-color:  hsl(217, 28%, 15%);
+    border-radius: 1em;
+}
+
+
+
+footer{
+    background-color: hsl(216, 53%, 9%);
+    color: hsl(0, 0%, 100%);
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+input{
+    border-radius: 50em;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.get-started{
+    background-color: hsl(198, 60%, 50%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 50em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1px solid hsl(198, 60%, 50%);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.get-started:hover{
+    background-color: hsl(176, 68%, 64%);
+   
+    font-weight: 400;
 }
