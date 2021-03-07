@@ -56,9 +56,17 @@ ul{
     border-bottom: 1px solid hsl(0, 0%, 100%);
 }
 
+
+.intro-illus{
+    max-width: 90%;
+}
+
+.illu2{
+   
+}
 .intro__main{
     width: 35%;
-    word-spacing: 2px;
+    word-spacing: 1.5px;
     letter-spacing: 1px;
 }
 
@@ -90,7 +98,7 @@ ul{
     text-align: center;
     width: 35%;
     line-height: 1.8;
-    letter-spacing: 1px;
+    l
     word-spacing: 2px;
     
 }
@@ -122,17 +130,18 @@ ul{
     padding-left: 15em;
     padding-right: 15em;
     padding-top: 5em;
-    
 }
 
 .row{
+    width: fit-content;
     display: flex;
     flex-direction: row;
     column-gap: 3em;
-    row-gap: 8em;
+    row-gap: 6em;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    
      
 }
 
@@ -141,7 +150,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: 35%;
     
 }
 
@@ -158,14 +167,13 @@ ul{
 .deatils__txt{
     text-align: center;
     word-spacing: 1px;
-    letter-spacing: 1px;
+    
 }
 
 .how-it-works{
     background-color: hsl(218, 28%, 13%);
     padding-top: 10em;
-   
-    padding-left: 3em;
+    padding-left: em;
 }
 
 .how__container{
@@ -174,12 +182,15 @@ ul{
     align-items: center;
 }
 
+.how-col{
+    
+}
 .how-it-row{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5em;
-    width: 80%;
+    width: 90%;
 }
 
 .how__title{
@@ -191,7 +202,7 @@ ul{
     color: hsl(0, 0%, 100%);
     line-height: 1.8;
     word-spacing: 1px;
-    letter-spacing: 1px;
+    
 }
 
 .bxs-right-arrow-circle{
@@ -219,7 +230,6 @@ ul{
 
 .testimonial__row{
     display: flex;
-    flex-direction: ;
     gap: 4em;
     
 }
@@ -241,6 +251,8 @@ ul{
 
 .commenter__name{
     color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .testimonial__img{
@@ -248,6 +260,9 @@ ul{
     
 }
 
+.commenter__work{
+    font-size: 14px;
+}
 .comments{
     text-align: left;
     line-height: 1.6;
@@ -390,9 +405,29 @@ footer{
 
     .row{
         flex-direction: column;
+        width: fit-content;
+    }
+
+    .col{
+       width: fit-content;
+        
+    }
+
+    .details-container{
+        padding-left: 3em;
+        padding-right: 3em;
     }
 
     .how-it-row{
+        flex-direction: column;
+    }
+
+    .deatils__txt{
+        text-align: center;
+        width: 60%;
+    }  
+
+    .testimonial__row{
         flex-direction: column;
     }
 }
