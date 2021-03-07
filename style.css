@@ -382,17 +382,26 @@ footer{
 .footer-row{
     display: flex;
     flex-direction: row;
+    
     }
 
 .footer-col{
     display: flex;
     flex-direction: column;
     width: 50%;
-    
+    align-items: center;
+}
+
+.col-1-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
 }
 
 .footer__text{
     line-height: 1.8;
+    font-size: 14px;
 }
 
 .footer__social{
@@ -400,7 +409,11 @@ footer{
     flex-direction: row;
     column-gap: 1em;
     padding-top: 1em;
+    align-items: flex-start;
     
+}
+.footer-logo{
+    margin-bottom: 3em;
 }
 
 .bxl-facebook,  .bxl-instagram,  .bxl-twitter{
@@ -409,6 +422,19 @@ footer{
     border-radius: 50em;
     font-size: 24px;
     height: fit-content;
+}
+
+.bxs-edit-location{
+    font-size: 24px;
+    height: fit-content;
+}
+.footer__link{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contact-col{
+    padding-left: ;
 }
 
 
@@ -441,6 +467,10 @@ footer{
     .testimonial__row{
         flex-direction: column;
     }
+
+    .footer-row{
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -467,4 +497,54 @@ footer{
         padding-right: 1em;
     }
 
+}
+
+@media only screen and (max-width: 580px) {
+
+    .Fylo{
+        width: 20%;
+        height: auto;
+    }
+    ul{
+        gap: 3em;
+        
+    }
+    .nav-text{
+        gap: 1em;
+        width: 100%;
+    
+    }
+    
+    .illu2{
+        width: 80%;
+        display: flex;
+        
+    }
+
+    .testimonial-container{
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 5em;
+        padding-top: 7em;
+    }
+
+    .sign-up__buttons{
+        row-gap: 1em;
+        flex-direction: column;
+        
+    }
+
+    input{
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+
+    .get-started{
+        padding-left: 9em;
+        padding-right: 9em;
+    }
+
+    .intro-illus{
+        width: 80%;
+    } 
 }
