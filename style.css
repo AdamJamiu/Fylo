@@ -22,22 +22,28 @@ body{
 
 nav{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
     margin: 0;
     padding-left: 5em;
-    padding-right: 8em;
+    padding-right:5em;
     padding-top: 2em;
 }
 
 ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style: none;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 5em;
     width: 100%;
     
+}
+
+.nav__text{
+    display: flex;
+    flex-direction: row;
+
 }
 .nav__link{
     font-size: 14px;
@@ -49,13 +55,15 @@ ul{
 .nav__link:hover{
     border-bottom: 1px solid hsl(0, 0%, 100%);
 }
+
 .intro__main{
     width: 35%;
     word-spacing: 2px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
+
 .Fylo{
-    float: left;
+
 }
 
 .landing__intro{
@@ -69,17 +77,18 @@ ul{
     align-items: center;
     color: hsl(0, 0%, 100%);
     gap: 1em;
+    padding-top: 5em;
 
 }
 
 .intro__main{
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .intro__txt{
     text-align: center;
-    width: 33%;
+    width: 35%;
     line-height: 1.8;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -124,8 +133,7 @@ ul{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
- 
-    
+     
 }
 
 .col{
@@ -133,7 +141,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: fit-content;
     
 }
 
@@ -150,7 +158,7 @@ ul{
 .deatils__txt{
     text-align: center;
     word-spacing: 1px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .how-it-works{
@@ -229,8 +237,8 @@ ul{
 
 .commenter__wrap{
     color: hsl(0, 0%, 100%);
-    ;
 }
+
 .commenter__name{
     color: hsl(0, 0%, 100%);
 }
@@ -255,10 +263,14 @@ ul{
     padding-top: 10em;
     flex-wrap: wrap;
     color: hsl(0, 0%, 100%);
+    z-index: 9;
+    top: 10em;
+    position: relative;
     
 }
 
 .sign-up-content{
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 15%);
     padding-top: 2em;
     padding-bottom: 2em;
     display: flex;
@@ -266,6 +278,7 @@ ul{
     text-align: center;
     column-gap: 5em;
     justify-content: center;
+    align-items: center;
     width: 70%;
     background-color:  hsl(217, 28%, 15%);
     border-radius: 1em;
@@ -273,14 +286,27 @@ ul{
     padding-left: 3em;
 }
 
-
-
-footer{
-    background-color: hsl(216, 53%, 9%);
-    color: hsl(0, 0%, 100%);
-    padding-left: 5em;
-    padding-right: 5em;
+.sign-up__buttons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 2em;
+    align-items: center;
+    justify-content: center;
 }
+
+.sign-up__text{
+    
+    text-align: center;
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 2em;
+    width: 70%;
+}
+
+
+
 
 input{
     border-radius: 50em;
@@ -290,6 +316,9 @@ input{
     padding-bottom: 1em;
     border: 1px solid hsl(0, 0%, 100%);
 }
+
+
+
 
 .get-started{
     background-color: hsl(198, 60%, 50%);
@@ -306,18 +335,10 @@ input{
 
 .get-started:hover{
     background-color: hsl(176, 68%, 64%);
-   
     font-weight: 400;
 }
 
-.sign-up__buttons{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    column-gap: 2em;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .error{
     color: red;
@@ -327,12 +348,51 @@ input{
     
 }
 
-.sign-up__text{
+
+.footer-container{
+    padding-top: 15em;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+footer{
+    background-color: hsl(216, 53%, 9%);
+    color: hsl(0, 0%, 100%);
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
     
-    text-align: center;
-    letter-spacing: 0;
-    word-spacing: 2px;
-    font-size: 14px;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.footer__text{
     line-height: 1.8;
-    margin-bottom: 2em;
+}
+
+.footer__social{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .row{
+        flex-direction: column;
+    }
+
+    .how-it-row{
+        flex-direction: column;
+    }
 }
