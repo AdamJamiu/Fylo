@@ -2,6 +2,7 @@
 html{
     margin: 0;
     padding: 0;
+    
 }
 body{
    
@@ -19,6 +20,11 @@ body{
     margin: 0;
 
 }
+span{
+    font-family: 'Raleway', sans-serif;
+}
+
+
 
 nav{
     display: flex;
@@ -159,6 +165,8 @@ ul{
     font-size: 5em;
     
 }
+
+
 
 .details__title{
 
@@ -382,14 +390,13 @@ footer{
 .footer-row{
     display: flex;
     flex-direction: row;
-    
-    }
+}
 
 .footer-col{
     display: flex;
     flex-direction: column;
     width: 50%;
-    align-items: center;
+    
 }
 
 .col-1-wrap{
@@ -398,6 +405,8 @@ footer{
     gap: 1em;
 
 }
+
+
 
 .footer__text{
     line-height: 1.8;
@@ -424,6 +433,14 @@ footer{
     height: fit-content;
 }
 
+.bx-phone-call{
+    font-size: 24px;
+}
+
+.bx-envelope{
+    font-size: 24px;
+    
+}
 .bxs-edit-location{
     font-size: 24px;
     height: fit-content;
@@ -431,10 +448,21 @@ footer{
 .footer__link{
     font-size: 14px;
     cursor: pointer;
+    
 }
 
 .contact-col{
     padding-left: ;
+    gap: 2em;
+}
+
+.phone-no{
+    font-size: 14px;
+    padding-left: 1em;   
+}
+.fylo-email{
+    font-size: 14px;
+    padding-left: 1em;   
 }
 
 
@@ -490,6 +518,9 @@ footer{
         width: 95;
     }
 
+    .footer-row{
+        flex-direction: column;
+    }
     input{
         padding-left: 1em;
         padding-top: 1em;
@@ -515,12 +546,14 @@ footer{
     
     }
     
+   
     .illu2{
         width: 80%;
         display: flex;
         
     }
 
+    
     .testimonial-container{
         padding-left: 3em;
         padding-right: 3em;
@@ -540,11 +573,17 @@ footer{
     }
 
     .get-started{
-        padding-left: 9em;
-        padding-right: 9em;
+        padding-left: 6em;
+        padding-right: 6em;
     }
 
     .intro-illus{
         width: 80%;
     } 
+
+
+}
+
+@media only screen and (max-width: 450px){
+    
 }
