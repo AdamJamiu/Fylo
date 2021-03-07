@@ -388,7 +388,7 @@ footer{
     display: flex;
     flex-direction: column;
     width: 50%;
-    background-color: green;
+    
 }
 
 .footer__text{
@@ -398,7 +398,7 @@ footer{
 .footer__social{
     display: flex;
     flex-direction: row;
-    column-gap: 2em;
+    column-gap: 1em;
     padding-top: 1em;
     
 }
