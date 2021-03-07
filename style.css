@@ -218,7 +218,7 @@ ul{
 }
 
 .testimonial{
-    background-color: hsl(219, 30%, 18%);
+    background-color: hsl(218, 28%, 13%);
 }
 
 .testimonial-container{
@@ -275,7 +275,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10em;
+    padding-top: 8em;
     flex-wrap: wrap;
     color: hsl(0, 0%, 100%);
     z-index: 9;
@@ -294,7 +294,7 @@ ul{
     column-gap: 5em;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 50%;
     background-color:  hsl(217, 28%, 15%);
     border-radius: 1em;
     padding-right: 3em;
@@ -359,7 +359,7 @@ input{
     color: red;
     width: fit-content;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     
 }
 
@@ -368,28 +368,27 @@ input{
     padding-top: 15em;
     display: flex;
     flex-direction: column;
-  
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 
 footer{
     background-color: hsl(216, 53%, 9%);
     color: hsl(0, 0%, 100%);
-    padding-left: 3em;
-    padding-right: 3em;
+    
 }
 
 .footer-row{
     display: flex;
     flex-direction: row;
-    
-}
+    }
 
 .footer-col{
     display: flex;
     flex-direction: column;
     width: 50%;
-    justify-content: space-evenly;
+    background-color: green;
 }
 
 .footer__text{
@@ -399,7 +398,19 @@ footer{
 .footer__social{
     display: flex;
     flex-direction: row;
+    column-gap: 2em;
+    padding-top: 1em;
+    
 }
+
+.bxl-facebook,  .bxl-instagram,  .bxl-twitter{
+    padding: 1%;
+    border: 1px solid #fff;
+    border-radius: 50em;
+    font-size: 24px;
+    height: fit-content;
+}
+
 
 @media only screen and (max-width: 1000px) {
 
@@ -430,4 +441,30 @@ footer{
     .testimonial__row{
         flex-direction: column;
     }
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    .sign-up__container{
+        width: fit-content;
+    }
+
+    .sign-up-content {
+        
+        padding: 0;
+        width: 90%;
+    }
+
+    .sign-up__text{
+        width: 95;
+    }
+
+    input{
+        padding-left: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 1em;
+    }
+
 }
