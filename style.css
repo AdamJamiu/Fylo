@@ -255,16 +255,26 @@ ul{
 
 .commenter__wrap{
     color: hsl(0, 0%, 100%);
+    display: flex;
+    
+}
+
+.name-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
 }
 
 .commenter__name{
     color: hsl(0, 0%, 100%);
     font-size: 14px;
     font-weight: 700;
+    line-height: -5;
 }
 
 .testimonial__img{
-    border-radius: 50em;
+    border-radius: 100%;
+    height: fit-content;
     
 }
 
@@ -581,9 +591,15 @@ footer{
         width: 80%;
     } 
 
+    .footer__social{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
 
 }
 
 @media only screen and (max-width: 450px){
-    
+
 }
