@@ -169,7 +169,7 @@ ul{
 
 
 .details__title{
-
+    text-align: center;
 }
 
 .deatils__txt{
@@ -230,8 +230,8 @@ ul{
 }
 
 .testimonial-container{
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 9em;
+    padding-right: 9em;
     background-color: hsl(218, 28%, 13%);
     padding-top: 10em;
 }
@@ -239,6 +239,8 @@ ul{
 .testimonial__row{
     display: flex;
     gap: 4em;
+    flex-wrap: no-wrap;
+    
     
 }
 
@@ -250,26 +252,39 @@ ul{
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 1em;
-    
+    padding-bottom: 1em;
 }
 
 .commenter__wrap{
     color: hsl(0, 0%, 100%);
     display: flex;
+    padding-top: 2em;
+    width: 100%;
     
 }
 
 .name-wrap{
     display: flex;
     flex-direction: column;
+    gap:0;
     margin-left: 5%;
+
+    
 }
 
 .commenter__name{
     color: hsl(0, 0%, 100%);
     font-size: 14px;
     font-weight: 700;
-    line-height: -5;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    
+}
+
+.commenter__work{
+    font-size: 12px;
+    word-spacing: 2px;
+    width: fit-content;
 }
 
 .testimonial__img{
@@ -278,9 +293,7 @@ ul{
     
 }
 
-.commenter__work{
-    font-size: 14px;
-}
+
 .comments{
     text-align: left;
     line-height: 1.6;
@@ -340,7 +353,6 @@ ul{
 
 
 
-
 input{
     border-radius: 50em;
     padding-left: 10em;
@@ -349,8 +361,6 @@ input{
     padding-bottom: 1em;
     border: 1px solid hsl(0, 0%, 100%);
 }
-
-
 
 
 .get-started{
@@ -370,7 +380,6 @@ input{
     background-color: hsl(176, 68%, 64%);
     font-weight: 400;
 }
-
 
 
 .error{
@@ -415,7 +424,6 @@ footer{
     gap: 1em;
 
 }
-
 
 
 .footer__text{
@@ -538,6 +546,14 @@ footer{
         padding-right: 1em;
     }
 
+    .intro__txt{
+        width: 70%;
+    }
+
+    .intro__main{
+        width: 70%;
+    }
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -613,6 +629,41 @@ footer{
     padding-top: 3em;
 }
 
+.sign-up__container{
+    padding-top: 0;
+}
+}
 @media only screen and (max-width: 450px){
+    nav{
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 2em;
+    }
+
+    
+.nav__text{ 
+    gap: 1em;
+}
+
+ul{
+    align-items: flex-start;
+    justify-content: center;
+}
+
+input{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.get-started{
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+
+.intro__button{
+    padding-left: 3em;
+    padding-right: 3em;
+}
 
 }
