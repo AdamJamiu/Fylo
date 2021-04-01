@@ -190,15 +190,27 @@ ul{
     align-items: center;
 }
 
-.how-col{
-    
-}
 .how-it-row{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5em;
-    width: 90%;
+    gap: 8em;
+    padding-left: 6em;
+    padding-right: 4em;
+}
+
+@media only screen and (max-width: 1200px){
+    .how-it-row{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .how-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .how__title{
@@ -210,7 +222,7 @@ ul{
     color: hsl(0, 0%, 100%);
     line-height: 1.8;
     word-spacing: 1px;
-    
+    width: 70%;
 }
 
 .bxs-right-arrow-circle{
@@ -339,6 +351,7 @@ ul{
     column-gap: 2em;
     align-items: center;
     justify-content: center;
+    gap: 1em;
 }
 
 .sign-up__text{
