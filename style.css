@@ -24,6 +24,30 @@ span{
     font-family: 'Raleway', sans-serif;
 }
 
+.bx-menu{
+    color: #fff;
+    font-size: 30px;
+    
+}
+
+i.bx-menu{
+   
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 400px){
+    i.bx-menu{
+        visibility: visible;
+    }
+
+    .nav__text{
+        visibility: hidden;
+    }
+
+    .Fylo{
+        width: 15px;
+    }
+}
 
 
 nav{
@@ -59,7 +83,7 @@ ul{
 }
 
 .nav__link:hover{
-    border-bottom: 1px solid hsl(0, 0%, 100%);
+    text-decoration: underline;
 }
 
 
