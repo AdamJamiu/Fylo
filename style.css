@@ -27,6 +27,7 @@ span{
 .bx-menu{
     color: #fff;
     font-size: 30px;
+    cursor: pointer;
     
 }
 
@@ -35,20 +36,90 @@ i.bx-menu{
     visibility: hidden;
 }
 
+.toggle{
+    transform: translateX(360px);
+    -webkit-transform: translateX(360px);
+    -moz-transform: translateX(360px);
+    -ms-transform: translateX(360px);
+    -o-transform: translateX(360px);
+}
+
 @media only screen and (max-width: 400px){
     i.bx-menu{
         visibility: visible;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 
-    .nav__text{
-        visibility: hidden;
+    
+
+    li.nav__link{
+        font-size: 35px;
+    }
+    img.Fylo{
+        width: 70px;
+        height: 30px;
     }
 
-    .Fylo{
-        width: 15px;
+    .intro-container{
+        padding-top: 2em;
     }
+
+    .intro__main{
+        width: 90%;
+        word-spacing: 0;
+        letter-spacing: 0;
+        line-height: 0;
+    }
+
+    p.deatils__txt{
+        width: 100%;
+    }
+    h2.details__title{  
+        width: 100%;
+    }
+
+    p.how__txt{
+        width: 100%;
+    }
+
+    div.how-it-row{
+        padding-left:40px;
+        padding-right: 40px;
+    }
+
+    p.sign-up__text{
+        width: 80%;
+    }
+    .sign-up__header{
+        font-size: 30px;
+    }
+
+   
 }
 
+@media only screen and (max-width: 700px){
+    ul.nav__text{
+        margin-top: 0;
+        position: absolute;
+        flex-direction: column;
+        display: flex;
+        width: 87vw;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: hsl(198, 60%, 50%);
+        transform: translateX(-750px);
+        -webkit-transform: translateX(-750px);
+        -moz-transform: translateX(-750px);
+        -ms-transform: translateX(-750px);
+        -o-transform: translateX(-750px);
+}
+
+}
 
 nav{
     display: flex;
@@ -57,6 +128,7 @@ nav{
     padding-left: 5em;
     padding-right:5em;
     padding-top: 2em;
+    align-items: center;
 }
 
 ul{
@@ -134,7 +206,7 @@ ul{
 }
 
 .intro__button{
-    background-color:   hsl(198, 60%, 50%);;   
+    background-color:   hsl(198, 60%, 50%);   
     border-radius: 80em;
     border: 1px solid hsl(198, 60%, 50%);
     padding-left: 8em;
@@ -205,7 +277,7 @@ ul{
 .how-it-works{
     background-color: hsl(218, 28%, 13%);
     padding-top: 10em;
-    padding-left: em;
+    
 }
 
 .how__container{
@@ -218,7 +290,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8em;
+    gap: 7em;
     padding-left: 6em;
     padding-right: 4em;
 }
@@ -227,6 +299,7 @@ ul{
     .how-it-row{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .how-col{
@@ -604,15 +677,12 @@ footer{
         gap: 3em;
         
     }
-    .nav-text{
-        gap: 1em;
-        width: 100%;
-    
-    }
+
+   
     
    
     .illu2{
-        width: 80%;
+        width: 100%;
         display: flex;
         
     }
@@ -670,7 +740,10 @@ footer{
 .sign-up__container{
     padding-top: 0;
 }
+
 }
+
+
 @media only screen and (max-width: 450px){
     nav{
         padding-left: 1em;
