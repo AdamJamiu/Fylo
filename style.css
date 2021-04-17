@@ -166,6 +166,7 @@ ul{
 
 .nav__link:hover{
     text-decoration: underline;
+    color: #fff;
 }
 
 
